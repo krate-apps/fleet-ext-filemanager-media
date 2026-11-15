@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "extensionId": "org.fleet.filemanager-media",
+  "pages": [
+    {
+      "id": "preview",
+      "title": "Media Preview",
+      "route": "/ext/org.fleet.filemanager-media/preview"
+    }
+  ],
+  "panels": [
+    {
+      "id": "fm-media",
+      "title": "Media Preview",
+      "placement": "settings"
+    }
+  ],
+  "forms": [
+    {
+      "id": "fm-preview",
+      "title": "Image preview (path under download_roots)",
+      "fields": [
+        {
+          "name": "path",
+          "label": "Image path",
+          "kind": "text",
+          "required": true,
+          "placeholder": "/data/downloads"
+        }
+      ],
+      "description": "Adjust Image preview (path under download_roots) — essentials first, extras under More options."
+    },
+    {
+      "id": "fm-mediainfo",
+      "title": "MediaInfo for a path",
+      "fields": [
+        {
+          "name": "path",
+          "label": "Media file path",
+          "kind": "text",
+          "required": true,
+          "placeholder": "/data/downloads"
+        }
+      ],
+      "description": "Adjust MediaInfo for a path — essentials first, extras under More options."
+    }
+  ]
+}
