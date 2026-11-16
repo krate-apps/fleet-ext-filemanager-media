@@ -12,16 +12,44 @@
 </p>
 
 <p align="center">
+  <a href="#configuration">Configuration</a> ·
   <a href="#install">Install</a> ·
   <a href="https://github.com/krate-apps/fleet">Fleet</a> ·
   <a href="https://github.com/krate-apps/fleet-official-bucket">Official bucket</a> ·
   <a href="https://github.com/krate-apps/fleet-official-bucket/blob/main/extensions.md">All extensions</a> ·
   <a href="https://github.com/krate-apps/fleet/blob/main/docs/developer/create-extension.md">Create an extension</a>
+
 </p>
 
 ---
 
 <p align="center"><code>org.fleet.filemanager-media</code> · official Fleet extension · SDK worker package</p>
+
+
+<!-- fleet-config:start -->
+## Configuration
+
+Turn this extension **on/off** with **Extensions → Activate / Deactivate**. There is no separate Enabled checkbox in settings; Apply only saves options. After a Fleet host upgrade, use **Reload workers** if RPC returns `extension worker not active`.
+
+### Parameters
+
+#### Image preview (path under download_roots)
+
+Adjust Image preview (path under download_roots) — essentials first, extras under More options.
+
+| Parameter | Type | Required | Notes |
+| --- | --- | --- | --- |
+| Image path (`path`) | text | yes | Placeholder: `/data/downloads` |
+
+#### MediaInfo for a path
+
+Adjust MediaInfo for a path — essentials first, extras under More options.
+
+| Parameter | Type | Required | Notes |
+| --- | --- | --- | --- |
+| Media file path (`path`) | text | yes | Placeholder: `/data/downloads` |
+
+<!-- fleet-config:end -->
 
 ## Install
 
