@@ -1,8 +1,8 @@
 schema: 1
 id: org.fleet.filemanager-media
 name: File Manager Media
-description: Preview images and run MediaInfo on files under download roots.
-version: 1.0.0
+description: "Deprecated — use org.fleet.filemanager (preview + MediaInfo). Kept for existing installs."
+version: 1.0.1
 api: ">=1.0.0 <2.0.0"
 engines:
   - rtorrent
